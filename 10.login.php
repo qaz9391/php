@@ -11,7 +11,7 @@
    while ($row = mysqli_fetch_array($result)) {
      if (($_POST["id"] == $row["id"]) && ($_POST["pwd"] == $row["pwd"])) {
        $login = TRUE;
-        // 使用 mysqli_fetch_array() 一筆一筆抓出查詢結果中的資料 比對使用者輸入的帳號與密碼是否與資料庫某一筆相符
+        // 這三行是一筆一筆抓出查詢結果中的資料去比對輸入的帳號跟密碼有沒有和資料庫某一筆一樣
      }
    }
 
