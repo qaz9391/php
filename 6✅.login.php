@@ -1,5 +1,4 @@
 <?php
-   
    $conn = mysqli_connect("db4free.net", "immust", "immustimmust", "immust");
    // 這邊是建立資料庫連線
    
@@ -16,7 +15,6 @@
        $login = TRUE; // 登入成功
      }
    }
-
    // 判斷是有沒有登入結果然後去輸出訊息
    if ($login == TRUE)
      echo "登入成功!!";
