@@ -1,0 +1,94 @@
+<html>
+<head>
+    <title>明新科技大學資訊管理系</title> <!-- 頁面標題 -->
+    <meta charset="utf-8"> <!-- 這邊是設定中文編碼 -->
+    
+    
+    <link href="https://cdn.bootcss.com/flexslider/2.6.3/flexslider.min.css" rel="stylesheet"><!-- 引入Flexslider的CSS樣式 -->
+    <script src="https://cdn.bootcss.com/jquery/2.2.2/jquery.min.js"></script><!-- 引入jQuery的函式庫 -->
+    <script src="https://cdn.bootcss.com/flexslider/2.6.3/jquery.flexslider-min.js"></script> <!-- 引入Flexslider的JS函式 -->        
+
+    <!-- 初始化輪廓圖 -->
+    <script>
+        $(window).load(function() {
+            $('.flexslider').flexslider({
+                animation: "slide", // 這邊是使用滑動動畫
+                rtl: true           // 然後從右到左輪播
+            });
+        });
+    </script>
+<div class="top">
+    <div class="container">
+        <div class="logo">
+            <img src="..."> 明新科技大學資訊管理系
+        </div>
+        <div class="top-nav">
+            <a href=>明新科大</a>
+            <a href=>明新管理學院</a>
+            <a href=login.html>登入</a>
+        </div>
+    </div>
+</div>
+<!-- 下面是導覽列 -->
+<div class="nav">   
+    <ul>
+        <li><a href="#home">首頁</a></li>
+        <li><a href="#introduction">系所簡介</a></li>
+        <li class="dropdown">
+            <a href="#faculty">成員簡介</a>
+            <div class="dropdown-content">
+                <a href="#faculty">黃老師</a>
+                <a href="#faculty">李老師</a>
+                <a href="#faculty">應老師</a>
+            </div>
+        </li>
+        <li><a href="#about">相關資訊</a></li>
+    </ul>
+</div>
+<!-- 下面是輪廓圖區 -->
+<div class="slider">
+    <div class="flexslider">
+        <ul class="slides">
+            <li><img src="slider1.JPG" /></li>
+            <li><img src="slider2.JPG" /></li>
+            <li><img src="slider3.JPG" /></li>
+        </ul>
+    </div>
+</div>
+<div class="faculty" id="faculty">
+    <h2>師資介紹</h2>
+    <div class="container">
+        <a class="teacher" href="">
+            <img src="faculty1.jpg" />
+            <h3>黃老師</h3>
+        </a>
+        <a class="teacher" href="">
+            <img src="faculty2.jpg" />
+            <h3>李老師</h3>
+        </a>
+        <a class="teacher" href="">
+            <img src="faculty3.jpg" />
+            <h3>應老師</h3>
+        </a>        
+    </div>
+</div>
+<div class="contact" id="about">
+    <h2>相關資訊</h2>
+    <div class="infos">
+        <div class="left">
+            <b>明新科技大學管理學院大樓二樓</b>
+            <span>地址：304新竹縣新豐鄉新興路1號</span>
+            <b>電話：03-5593142</b>
+            <span>分機：3431、3432、3433</span>
+            <b>傳真：03-5593142</b>
+            <span>分機：3440</span>
+        </div>
+        <div class="right">
+            <iframe src="...google map..." frameborder="0"></iframe>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy;Copyright 2022 Department of Information Management, MUST. 
+    All rights reserved. 維護者 Tony SHHuang
+</div>
