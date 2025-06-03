@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>登入範例</title> <!-- 這是網頁的標題，會出現在上方的分頁名稱 -->
+    </head>
+    <body>
+        <!-- 表單開始，使用 POST 方法把資料傳到 2.login.php 去處理 -->
+        <form method=post action="2.login.php">
+            帳號：<input type=text name="id"><br /> <!-- 輸入帳號的格子，name="id" 是這個欄位的代號 -->
+            密碼：<input type=password name="pwd"><p></p> <!-- 密碼輸入格子，打字時會變 ●●●，name="pwd" 是代號 -->
+            <input type=submit value="登入"> <!-- 按下這顆會送出剛剛打的帳密 -->
+            <input type=reset value="清除"> <!-- 這顆會把欄位清空，重新輸入 -->
+        </form>
+    </body>
+</html>
