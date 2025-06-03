@@ -1,0 +1,140 @@
+<!-- === 頁面設定與資源載入區=== -->
+<head>
+    <title>明新科技大學資訊管理系</title>
+    <meta charset="utf-8">
+    <link href="https://cdn.bootcss.com/flexslider/2.6.3/flexslider.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/flexslider/2.6.3/jquery.flexslider-min.js"></script>
+    <script>
+        $(window).load(function() {
+            $('.flexslider').flexslider({
+                animation: "slide",
+                rtl: true
+            });
+        });
+    </script>
+    <style>
+        /* === 全域樣式設定（字型顏色、對齊等） === */
+        
+        /* === 頁首樣式：logo 與右側連結 === */
+
+        /* === 導覽列樣式（橫向導覽 + 下拉式選單） === */
+
+        /* === 輪播圖區（.slider 與 .flexslider） === */
+
+        /* === 系所簡介橫幅區塊樣式（背景漸層 + 大標題） === */
+
+        /* === 師資介紹區塊樣式（圖片 + 姓名） === */
+
+        /* === 聯絡資訊區塊樣式（文字 + Google map） === */
+
+        /* === 頁尾樣式 === */
+
+        /* === 登入 modal 彈跳視窗樣式 === */
+    </style>
+</head>
+<body>
+
+<!-- === 頁首區：LOGO + 快速連結 + 登入彈跳視窗 === -->
+<div class="top">
+    <div class="container">
+        <div class="logo">
+            <img src="..."> 明新科技大學資訊管理系
+        </div>
+        <div class="top-nav">
+            <a href=>明新科大</a>
+            <a href=>明新管理學院</a>
+
+            <!-- 點擊「登入」會跳出下方 modal 登入表單 -->
+            <label onclick="document.getElementById('login').style.display='block'">登入</label>
+            <div id="login" class="modal">
+                <span onclick="document.getElementById('login').style.display='none'">
+                    &times; 管理系統登入
+                </span>
+                <form method=post action="10.login.php">
+                    帳號：<input type=text name="id"><br />
+                    密碼：<input type=password name="pwd"><p></p>
+                    <input type=submit value="登入"> <input type=reset value="清除">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- === 導覽列區塊（成員簡介下拉選單） === -->
+<div class="nav">
+    <ul>
+        <li><a href="#home">首頁</a></li>
+        <li><a href="#introduction">系所簡介</a></li>
+        <li class="dropdown">
+            <a href="#faculty">成員簡介</a>
+            <div class="dropdown-content">
+                <a href="#faculty">黃老師</a>
+                <a href="#faculty">李老師</a>
+                <a href="#faculty">應老師</a>
+            </div>
+        </li>
+        <li><a href="#about">相關資訊</a></li>
+    </ul>
+</div>
+
+<!-- === 輪播圖區塊：使用FlexSlider展示 === -->
+<div class="slider">
+    <div class="flexslider">
+        <ul class="slides">
+            <li><img src="slider1.JPG" /></li>
+            <li><img src="slider2.JPG" /></li>
+            <li><img src="slider3.JPG" /></li>
+        </ul>
+    </div>
+</div>
+
+<!-- === 系所簡介區塊（藍色漸層背景） === -->
+<div class="banner" id="introduction">
+    <h1>系所簡介</h1>
+    <h1>歷年教育部評鑑皆榮獲一等</h1>
+    <h1>明新科技大學資訊管理系</h1>
+    <h1>全國私立科大第一資管系</h1>
+</div>
+
+<!-- === 師資介紹區塊：三位老師圖片 + 名稱 === -->
+<div class="faculty" id="faculty">
+    <h2>師資介紹</h2>
+    <div class="container">
+        <a class="teacher" href="">
+            <img src="faculty1.jpg" />
+            <h3>黃老師</h3>
+        </a>
+        <a class="teacher" href="">
+            <img src="faculty2.jpg" />
+            <h3>李老師</h3>
+        </a>
+        <a class="teacher" href="">
+            <img src="faculty3.jpg" />
+            <h3>應老師</h3>
+        </a>
+    </div>
+</div>
+
+<!-- === 聯絡資訊區塊：地址、電話、傳真 + Google Map === -->
+<div class="contact" id="about">
+    <h2>相關資訊</h2>
+    <div class="infos">
+        <div class="left">
+            <b>明新科技大學管理學院大樓二樓</b>
+            <span>304新竹縣新豐鄉新興路1號</span>
+            <b> 電話:03-5593142</b>
+            <span>分機:3431、3432、3433</span>
+            <b> 傳真:03-5593142</b>
+            <span>分機:3440</span>
+        </div>
+        <div class="right">
+            <iframe src="google map iframe..." frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+
+<!-- === 頁尾區塊：版權資訊 === -->
+<div class="footer">
+    &copy;Copyright 2022 Department of Information Management, MUST. All rights reserved. 維護者 Tony SHHuang
+</div>
